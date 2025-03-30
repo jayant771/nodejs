@@ -10,7 +10,11 @@ const cors = require("cors")
 connectDb();
 const app = express();
 
-const Port = process.env.PORT || 5000;  
+app.get("/", (req, res) => {
+    res.send("Hello, your Node.js app is working!");
+});
+
+const Port = process.env.PORT || 5000;   
 
 app.use(cors());
 app.use(express.json());
