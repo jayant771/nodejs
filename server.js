@@ -23,6 +23,6 @@ app.use("/api/users",require("./routes/userRoute"))
 app.use(errorHandler);
 
 app.listen(Port, ()=>{
-console.log(`server is running on ${Port}`)
+console.log(`server is running on prot no :${Port}`)
 });
  
